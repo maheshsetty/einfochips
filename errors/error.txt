@@ -1,0 +1,16 @@
+ 52
+down vote
+favorite
+13
+	
+
+I can connect to another Ubuntu machine in my LAN via SSH. On both of then PC's I ins
+
+talled openssh-server but from another Ubuntu computer I can not connect to my PC via SSH and I got this error:
+
+ 3
+down vote
+favorite
+	
+
+I've generated my ssh key and uploaded it to my github account.

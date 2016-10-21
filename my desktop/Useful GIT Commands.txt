@@ -1,0 +1,206 @@
+                                                                         GIT COMMANDS
+                                                   
+
+
+                                                                 [Configuration Commands]
+
+git config --global user.name "Sam Smith"     -   Configure the author name and email address to be used with your commits.
+git config --global user.email sam@example.com
+***********************************************************************************************************************************************************
+                                                                    [COMMON COMMANDS]
+
+
+                                 
+git clone /path/to/repository - Create a working copy of a local repository.
+git clone username@host:/path/to/repository - For a remote server, use.
+
+git init - To initialize or Create a new local repository
+
+git status - List the files you've changed and those you still need to add or commit.(in short overall status)
+git status -s - To check the status of the staging area.
+
+git diff - to see the different versions of the file after the file is modified and not added yet.  
+git diff --base <filename> - View the conflicts against the base file.
+git diff <sourcebranch> <targetbranch> - Preview changes, before merging
+
+
+git add <file name> - For adding the specific file into the staging area.
+git add . - For adding all files into the staging area.
+git add *.html/java/etc (type the extension after the file) - For adding all files having the specified extension . This is called wild card.
+
+
+git commit -m 'commit message'   - To Commit changes to head (but not yet to the remote repository)..
+git commit + press i + type commit message + then press <ESC+:+wq> - To Commit changes to head (but not yet to the remote repository).
+git commit -a - Commit any files you've added with git add, and also commit any files you've changed since then.
+
+
+git log - to see the commit history.
+git shortlog - Summarize git log output.
+git reflog - Manage reflog information.
+
+git revert- Revert some existing commits
+git stash - Stash the changes in a dirty working directory away.
+git rebase - Reapply commits on top of another base tip.
+
+git push origin master - Send changes to the master branch of your remote repository.
+
+
+git pull - Fetch and merge changes on the remote server to your working directory.
+
+
+git merge <branchname> - To merge a different branch into your active branch.
+
+
+git mv oldname newname - If you need to move a file, Git can detect your manual relocation of the file
+                         and will show it as a pending “move.” However, it is often more prudent
+                         to use the Git-specific command to relocate a file and track its new
+                         destination.(Move or rename a file, a directory, or a symlink.)
+
+
+
+git rm<filename> - To remove the file.
+git rm -f <filename> - For force removal.
+
+git commit -a -m "A file was deleted" - If you deleted a file from the working tree, then commit the deletion.
+And push your commit upstream by the command git push
+
+
+
+
+
+git remote - Manage set of tracked repositories
+git remote add origin <server> -If you haven't connected your local repository to a remote server, add the server to be able to push to it.
+git remote -v - List all currently configured remote repositories.
+
+git blame - Show what revision and author last modified each line of a file
+
+git cherry - Find commits yet to be applied to upstream
+
+git ls -la - to see files and directories.
+
+touch .gitignore - will create a .gitignore file for us which will tell the GIT which files to exclude from adding to the staging area.
+
+cat <filename> - to see the contents of the file 
+vim <filename> - to make changes in the file from git bash.
+
+git grep "foo()" - Search the working directory for foo().
+*************************************************************************************************************************************************************
+                                                                         [Branch Commands]
+
+
+Branching in GIT [[Branches are used to create another line of development. 
+By default, Git has a master branch, which is same as trunk in Subversion. 
+Usually, a branch is created to work on a new feature. 
+Once the feature is completed, it is merged back with the master branch and we delete the branch. 
+Every branch is referenced by HEAD, which points to the latest commit in the branch. 
+Whenever you make a commit, HEAD is updated with the latest commit.]]
+
+git branch - List all the branches in your repo, and also tell you what branch you're currently in
+git branch <Branch name> - For creating the new branch.
+git checkout -b <branchname> - Create a new branch and switch to it.
+git checkout <Branch name> -Switch from one branch to another.
+git branch -d <branchname> - Delete the feature branch.
+git push origin <branchname> - Push the branch to your remote repository, so others can use it.
+git push --all origin - Push all branches to your remote repository.
+git push origin :<branchname> - Delete a branch on your remote repository.
+
+                                                                         [Misc. Commands]
+
+
+git clean - Remove untracked files from the working tree.
+git cherry-pick - Apply the changes introduced by some existing commits.
+git fetch -Download objects and refs from another repository.
+git gc - Cleanup unnecessary files and optimize the local repository.
+git gui - A portable graphical interface to Git.
+git show - Show various types of objects.
+git worktree - Manage multiple working trees.
+gitk - The Git repository browser.
+git prune - Prune all unreachable objects from the object database.
+git relink - Hardlink common objects in local repositories
+git repack - Pack unpacked objects in a repository.
+git count-objects - Count unpacked number of objects and their disk consumption.
+
+****************************************************************************************************************************************************************
+                                                         [Update from the remote repository.]
+
+git pull - Fetch and merge changes on the remote server to your working directory.
+
+git merge <branchname> - To merge a different branch into your active branch.
+
+git diff - View all the merge conflicts.
+git diff --base <filename> - View the conflicts against the base file.
+git diff <sourcebranch> <targetbranch> - Preview changes, before merging
+
+****************************************************************************************************************************************************************
+
+
+git add <filename> -After you have manually resolved any conflicts, you mark the changed file.
+
+****************************************************************************************************************************************************************
+                                                                  [Undo local changes]
+
+git checkout -- <filename> - If you mess up, you can replace the changes in your working tree with the last content in head.
+                              Changes already added to the index, as well as new files, will be kept.
+
+git fetch origin - Instead, to drop all your local changes and commits, fetch the latest history from the server and
+ point your local master branch at it, do this: <<git reset --hard origin/master>>
+****************************************************************************************************************************************************************
+                                                                    [OTHER COMMANDS]
+cd- to enter into master branch.
+
+cd /- to exit master branch.
+cd /path - to go to the specific location
+
+git ls -la - to see files and directories.
+
+ls -
+ls -c - cached 
+ls -d - deleted
+ls -m - modified
+ls -o - other (untracked)
+ls -i - ignored
+ls -s - staged
+ls -u - unmerged
+ls -k - Killed
+
+clear- To clear the Screen.
+exit - To close the Window.
+
+***************************************************************************************************************************************************************
+                                                                    [Misc. Commands]
+                                                                       
+git grep - (Print lines matching a pattern.)is very, very, powerful. It has pretty much all the normal grep options, plus:
+with --cached, looks only in the cache.
+
+git show-branch -a is useful to get a bird's eye view of all your branches and their topological relationships.
+
+git show-branch -gN (N is some number) shows you reflog info for the current branch, including topological relationships and relative time.
+ This is useful if you had a lot of rebases or amended commits and you think you might need one of them back.
+
+git cat-file blob 789abc - cat the object
+
+# any tree
+git ls-tree         # files and directories, top level only
+git ls-tree -l      # also show the size of the object
+git ls-tree -d      # only directories
+git ls-tree -r      # recurse, only files
+git ls-tree -r -d   # recurse, only directories
+git ls-tree -r -t   # recurse, both directories and files 
+****************************************************************************************************************************************************************
+                                                                         [Tags]
+
+git tag 1.0.0 <commitID> - You can use tagging to mark a significant changeset, such as a release.
+git log - CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using.
+git push --tags origin - Push all tags to remote repository.
+
+
+****************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+

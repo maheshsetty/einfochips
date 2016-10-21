@@ -1,0 +1,60 @@
+// camer tamperiong working
+cd /var/lib/jenkins/workspace/vms_va_test/POC/CameraTampering/Linux
+make clean
+make
+rm -rfd .kw*
+kwcheck create --url http://192.168.9.253:8080/BEL_VMS
+make clean
+kwinject -o kw_buildspec.out make
+kwcheck import kw_buildspec.out
+kwcheck set license.host=192.168.9.253 license.port=27000
+kwcheck run -pd .kwlp
+kwcheck list -pd .kwlp -y -F xml >kw_report_xml.xml
+
+cd /var/lib/jenkins/workspace/vms_va_test/POC/FaceRecognition/Linux
+make clean
+make
+rm -rfd .kw*
+kwcheck create --url http://192.168.9.253:8080/BEL_VMS
+make clean
+kwinject -o kw_buildspec.out make
+kwcheck import kw_buildspec.out
+kwcheck set license.host=192.168.9.253 license.port=27000
+kwcheck run -pd .kwlp
+kwcheck list -pd .kwlp -y -F xml >kw_report_xml.xml
+
+cd /var/lib/jenkins/workspace/vms_va_test/POC/LPR/Linux
+make clean
+make
+rm -rfd .kw*
+kwcheck create --url http://192.168.9.253:8080/BEL_VMS
+make clean
+kwinject -o kw_buildspec.out make
+kwcheck import kw_buildspec.out
+kwcheck set license.host=192.168.9.253 license.port=27000
+kwcheck run -pd .kwlp
+kwcheck list -pd .kwlp -y -F xml >kw_report_xml.xml
+
+cd /var/lib/jenkins/workspace/vms_va_test/POC/MotionDetection/Linux
+make clean
+make
+rm -rfd .kw*
+kwcheck create --url http://192.168.9.253:8080/BEL_VMS
+make clean
+kwinject -o kw_buildspec.out make
+kwcheck import kw_buildspec.out
+kwcheck set license.host=192.168.9.253 license.port=27000
+kwcheck run -pd .kwlp
+kwcheck list -pd .kwlp -y -F xml >kw_report_xml.xml
+
+cd /var/lib/jenkins/workspace/vms_va_test/POC/QueueManagement/Linux
+make clean
+make
+rm -rfd .kw*
+kwcheck create --url http://192.168.9.253:8080/BEL_VMS
+make clean
+kwinject -o kw_buildspec.out make
+kwcheck import kw_buildspec.out
+kwcheck set license.host=192.168.9.253 license.port=27000
+kwcheck run -pd .kwlp
+kwcheck list -pd .kwlp -y -F xml >kw_report_xml.xml

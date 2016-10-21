@@ -1,0 +1,52 @@
+                         
+                  					 How to generate ssh keys Client setup on developer machine
+             					   ----------------------------------------------------------------------
+
+
+1. Download git client from below link and install it in your windows desktop http://git-scm.com/download/win(GITBASH)
+
+2. Install it as it is, how you generally install any windows msi/exe files
+
+3. open git bash from start program and create a dir at your home location on gitbash
+
+   C:\Users\mahesh.setty>mkdir .ssh
+
+   cd .ssh
+
+   Enter below command and just enter 3 times
+
+   ssh-keygen -t rsa 
+    
+   Generate public/private key 
+
+   This will create three files under .ssh diretory, open id_rsa.pub file and copy the public key then add the sam through gitlab web UI under your profile sections
+
+4. copy public key on server at some temporary location
+   
+   scp id_rsa.mahesh.setty.pub maheshsetty@10.110.4.225:/tmp/
+
+5. Login to server
+  
+   login to 10.110.5.225 with username: maheshsetty password: einfochips
+
+6  go to temporary directory
+
+   cd /tmp/
+
+7. append public key
+
+   cat id_rsa.pub  >> ~/.ssh/authorized_keys
+ 
+8. Create mahesh.setty user name on gitlab dashboard, select user ssh keys option then add above copied public key there.
+
+9. Now clone the repo to your machine by running below command to create local repo/workspace
+	
+	git config --global user.name "mahesh.setty"
+	git config --global user.email "mahesh.setty@einfochips.com" 
+
+
+
+
+
+
+

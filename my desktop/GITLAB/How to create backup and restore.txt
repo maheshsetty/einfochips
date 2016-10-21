@@ -1,0 +1,42 @@
+How to create a full backup of GitLab?
+
+Follow these steps:
+
+   #cd /your/directory
+
+Stop all servers:
+
+  #sudo /opt/gitlab/ctlscript.sh stop
+
+Create a compressed file with the stack contents:
+
+  #sudo tar -pczvf gitlab_backup.tar.gz /opt/gitlab
+
+Restart all servers:
+
+  #sudo /opt/bitanami/ctlscript.sh start
+
+
+Restore
+
+
+Change to the directory containing your backup:
+
+   #cd /your/directory
+
+Stop all servers:
+
+   #sudo /opt/gitlab/ctlscript.sh stop
+
+Move the current stack to a different location:
+
+   #sudo mv /opt/gitlab /tmp/gitlab-backup
+
+Uncompress the backup file to the original directoryv
+
+   #sudo tar -pxzvf gitlab-backup.tar.gz -C /
+
+Start all servers:
+
+   #sudo /opt/gitlab/ctlscript.sh start
+

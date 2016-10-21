@@ -1,0 +1,54 @@
+Hi Mahesh,
+ 
+Please find below details of git server.
+ 
+System credential: einfochips/einfochips
+Git credential: git/einfochips
+Server IP: 192.168.10.127
+Jenkins : http://192.168.10.127:8090/
+ 
+Various repository –
+git clone git@192.168.10.127:/home/git/vms_vss_and_devices.git
+git clone git@192.168.10.127:/home/git/vms_server.git
+git clone git@192.168.10.127:/home/git/vms_viewer.git
+git clone git@192.168.10.127:/home/git/vms_va.git
+git clone git@192.168.10.127:/home/git/vms_desktop.git
+git clone git@192.168.10.127:/home/git/vms_managementclient.git
+
+
+My jenkins url:
+
+10.110.5.131:8080/jenkins
+
+C:\Program Files (x86)\Jenkins\secrets:---password:-->  8b54a1e84e7649f7b8f6c9c703723ffc
+
+user name:admin
+passwd:einfochips@123
+
+
+
+
+
+
+C:\Users\MAHESH~1.SET\AppData\Local\Temp\hudson8403683695717510855.bat
+
+
+https://github.com/einfochips11/BELVMS.git
+
+
+
+http://10.110.7.51:8080/gitblit/summary/vms_desktop.git
+http://10.110.7.51:8080/gitblit/summary/vms_managementclient.git
+http://10.110.7.51:8080/gitblit/summary/vms_server.git
+http://10.110.7.51:8080/gitblit/summary/vms_va.git
+http://10.110.7.51:8080/gitblit/summary/vms_viewer.git
+http://10.110.7.51:8080/gitblit/summary/vms_vss_and_devices.git
+
+http://admin@10.110.7.51:8080/gitblit/r/vms_vss_and_devices.git
+
+vms_desktop.git
+vms_managementclient.git
+vms_server.git
+vms_viewer.git
+vms_vss_and_devices.git
+vms_va.git

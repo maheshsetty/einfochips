@@ -1,0 +1,20 @@
+
+Various repository –
+
+
+http://192.168.10.128:8080/gitblit/tree/BEL_VMS.git/master
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_desktop
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_managementclient
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_server
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_streamer
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_va
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_viewer
+
+http://192.168.10.128:8080/gitblit/history/BEL_VMS.git/master/vms_vss_and_devices
+

@@ -1,0 +1,114 @@
+  896  ifconfig
+  897  ls
+  898  cd /opt
+  899  ls
+  900  cd gitlab-8.9.6-0/
+  901  ls
+  902  ls config
+  903  locate Nidec
+  904  cd apps/gitlab/repositories/gitlab/
+  905  ls
+  906  ls -l
+  907  cd Nidec.git/
+  908  ls -l
+  909  ls
+  910  touch git-daemon-export-ok
+  911  ls -l
+  912  chown git:git git-daemon-export-ok
+  913  ls
+  914  ps
+  915  ps afxS
+  916  netstat -tna | grep 22
+  917  lsof -n | grep gitlab
+  918  lsof -n | grep gitlab | grep 22
+  919  lsof -n | grep gitlab | grep -i ipv4
+  920  tcpdump -n host 10.110.5.131
+  921  tcpdump -n host port telnet
+  922  tcpdump -n port telnet
+  923  tcpdump -n port ftp
+  924  ifconfig
+  925  tcpdump -n port ftp
+  926  tcpdump -n port ssh
+  927  tcpdump -n
+  928  which tcpdump
+  929  ls
+  930  ps afxS
+  931  strace -p 20242
+  932  ps afxS
+  933  ps afxS | grep gitlab
+  934  ps afxS | grep gitlab | wc
+  935  strace -f -F -p 20242
+  936  ps afxS | grep gitlab
+  937  strace -f -F -p 6352
+  938  ps afxS | grep gitlab
+  939  lsof -n -p 899
+  940  lsof -n -p 3860
+  941  ps afxS | grep gitlab
+  942  lsof -n -p 3793
+  943  vim /etc/passwd
+  944  vi /etc/passwd
+  945  ls /home/git
+  946  ls /home/git -l
+  947  ssh git@localhost
+  948  ps afxS
+  949  ps afxS | grep ssh
+  950  strace -f -F -v -s 1000 -p 834 -p 3996 -p 4260 -p 1986
+  951  ls /etc/ssh/sshd_config
+  952  vi /etc/ssh/sshd_config
+  953  cat /var/log/syslog
+  954  ls
+  955  ls /var/log
+  956  dmesg
+  957  cat /var/log/auth.log
+  958  passwd git
+  959  /etc/init.d/ssh restart
+  960  ls
+  961  vim config
+  962  vi config
+  963  ls
+  964  ls /home/git
+  965  ls /home/git/gitlab-shell/
+  966  ls
+  967  cd ..
+  968  ls
+  969  cd debugging_gitlab.git/
+  970  ls
+  971  ls -;
+  972  ls -l
+  973  vi config
+  974  ps
+  975  ps afxS
+  976  cd ..
+  977  ls
+  978  cd ..
+  979  ls
+  980  cd ..
+  981  ls
+  982  cd conf/
+  983  ls
+  984  vim httpd-app.conf
+  985  vi httpd-app.conf
+  986  cd ..
+  987  ls
+  988  cd gitlab-shell/
+  989  ls
+  990  tail gitlab-shell.log
+  991  ls
+  992  git
+  993  ps afxS | grep git
+  994  clear
+  995  cd ..
+  996  ls
+  997  cd repositories/
+  998  ls
+  999  cd gitlab/
+ 1000  ls
+ 1001  cd debugging_gitlab.git/
+ 1002  su - git
+ 1003  clear
+ 1004  cd ..
+ 1005  clear
+ 1006  ls
+ 1007  ls /home/git
+ 1008  pwd
+ 1009  history

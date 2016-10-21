@@ -1,0 +1,267 @@
+                                                                           Gitlab document step by step 
+                                                                     -----------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Git Dashboard:-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Project
+Todos
+Activity
+Groups
+Milestones
+Issues
+Merge Requests
+Snippets
+Help
+Profile Settings
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ How to generate ssh keys Client setup on developer machine:-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Download git client from below link and install it in your windows desktop http://git-scm.com/download/win(GITBASH)
+
+2. Install it as it is, how you generally install any windows msi/exe files
+
+3. open git bash from start program and create a dir at your home location on gitbash
+
+   C:\Users\mahesh.setty>mkdir .ssh
+
+   cd .ssh
+
+   Enter below command and just enter 3 times
+
+   ssh-keygen -t rsa 
+    
+   Generate public/private key 
+
+   This will create three files under .ssh diretory, open id_rsa.pub file and copy the public key then add the sam through gitlab web UI under your profile sections
+
+4. copy public key on server at some temporary location
+   
+   scp id_rsa.mahesh.setty.pub maheshsetty@10.110.4.225:/tmp/
+
+5. Login to server
+  
+   login to 10.110.4.225 with username: maheshsetty password: einfochips
+
+6  go to temporary directory
+
+   cd /tmp/
+
+7. append public key
+
+   cat id_rsa.pub  >> ~/.ssh/authorized_keys
+ 
+8. Create mahesh.setty user name on gitlab dashboard, select user ssh keys option then add above copied public key there.
+
+9. Now clone the repo to your machine by running below command to create local repo/workspace
+	
+	git config --global user.name "mahesh.setty"
+	git config --global user.email "mahesh.setty@einfochips.com" 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+How to create projects:-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Goto Gitlab Dashboard->Project->New Project-> 
+
+Project Owner->Administrator
+
+Project Nmae->Nidec
+
+Import Project from -> GitHub,Bitbucket,GitLab.com
+
+Description(optional)->This is java project.
+
+Visibility Level->> Allways -->Private
+
+Next 
+
+Create Project.
+
+Create a new repository
+
+git clone http://10.110.4.225:8081/gitlab/Nidec.git
+
+cd Nidec
+
+touch README.md
+
+git add README.md
+
+git commit -m "add README"
+
+git push -u origin master
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Project (Nidec) Dashboard:-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Files
+
+Commit
+
+Branch
+
+Tags
+
+Add Changlog
+
+Add License 
+
+Add contribution guide 
+
+Set Up CI
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+How to download Repository files
+-----------------------------------------------------------------------------------------
+
+Goto Gitlaab dashboard->Project->Select the project->Click the files->Download ZIP (Different types)
+
+Download zip
+Download tar.gz
+Download tar.bz2
+Download tar 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+How to create Issue Tracking & Milestones
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Issue Tracking
+-----------------
+Goto Gitlaab dashboard->Project->Select the project->Issues->New Issue->New issue->
+
+Title->Bug fix
+
+Description->Syntax error
+
+Assigenee->Down below (admin)
+
+Milestone->Down below (bug)
+
+Label ->Create new label
+
+NEXT
+
+Submit issue
+
+
+Milestones
+-----------------
+Goto Gitlaab dashboard->Project->Select the project->New Milestone
+
+Title->Bug
+
+Due date->select date
+
+Description->
+
+NEXT
+
+Create milestone
+ 
+-----------------------------------------------------------------------------------------------------------------------------------
+How to create Users & Groups Managment & Permissions 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Goto Gitlaab dashboard->Click the Admin Area->New User->
+
+Name:mahesh
+
+Username:mahesh.setty
+
+Emails:mahesh.setty@einfochips.com
+
+Password:
+
+Access:
+
+Project limit :2
+
+Profile;
+
+NEXT
+
+Create user
+---------------------------------------------------------------------------------------------------------------
+How to assign the project
+-----------------------------------------------------------------------------------------------------------------
+
+Goto Gitlaab dashboard->Project->Select the project->Click the setting option->click the Member
+
+Add new user to project 
+
+users with access to this project are listed below.
+
+People:click add below users
+
+Project Access: Four types Permissions link
+
+Read more about role permissions here
+
+
+                Guest
+	       
+                Reporter
+   	         
+                Developer
+
+                Master
+
+NEXT
+
+Add users to project
+
+------------------------------------------------------------------------------------------------------------------------------
+How to create groups
+-------------------------------------------------------------------------------------------------------------------------------
+Goto Gitlaab dashboard->Click the Admin Area->Create new group
+
+Group path:url any group
+
+Visibility level :-private
+
+Create group
+
+Assign users in group:like maheshsetty
+
+Assign project in user
+
+
+NEXT
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

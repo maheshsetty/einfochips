@@ -1,0 +1,258 @@
+ 1913  cd jenkins
+ 1914  ls
+ 1915  cd workspace/
+ 1916  ls
+ 1917  cd vms_va_test/
+ 1918  ls
+ 1919  cd poc
+ 1920  cd POC
+ 1921  ls
+ 1922  cd CameraTampering/
+ 1923  LS
+ 1924  ls
+ 1925  cd Linux/
+ 1926  ls
+ 1927  cd
+ 1928  cd /opt/sonar-runner/ls
+ 1929  cd /opt/sonar-runner/
+ 1930  ls
+ 1931  cd bin
+ 1932  ls
+ 1933  vi sonar-runner
+ 1934  cd ..
+ 1935  cd conf/
+ 1936  ls
+ 1937  vi sonar-runner.properties
+ 1938  cd /tmp/
+ 1939  ls
+ 1940  cat id_rsa.pub >> ~/.ssh/authorized_keys
+ 1941  cd
+ 1942  where java
+ 1943  gwhere java
+ 1944  ls
+ 1945  cd /opt/sonar-runner/
+ 1946  ls
+ 1947  cd bin
+ 1948  ls
+ 1949  cd
+ 1950  cd /opt/sonar-runner/
+ 1951  ls
+ 1952  cd conf
+ 1953  ls
+ 1954  vi sonar-runner.properties
+ 1955  cd
+ 1956  ls
+ 1957  cd /var/lib/jenkins/workspace/Vms_va/POC/CameraTampering/Linux
+ 1958  ls
+ 1959  make
+ 1960  cd
+ 1961  cd /var/lib/jenkins/workspace/Vms_va/POC/FaceRecognition/Linux
+ 1962  ls
+ 1963  make
+ 1964  cd
+ 1965  cd /var/lib/jenkins/workspace/Vms_va/POC/LPR/Linux
+ 1966  ls
+ 1967  make
+ 1968  cd
+ 1969  /var/lib/jenkins/workspace/Vms_va/POC/MotionDetection/Linux
+ 1970  ls
+ 1971  /var/lib/jenkins/workspace/Vms_va/POC/MotionDetection/Linux
+ 1972  cd /var/lib/jenkins/workspace/Vms_va/POC/MotionDetection/Linux
+ 1973  ls
+ 1974  make
+ 1975  cd
+ 1976  cd /var/lib/jenkins/workspace/Vms_va/POC/QueueManagement/Linux
+ 1977  ls
+ 1978  make
+ 1979  cd
+ 1980  cd /var/lib/jenkins/workspace/Vms_va/POC/CameraTampering/Linux
+ 1981  ls
+ 1982  make
+ 1983  cd
+ 1984  cd /var/lib/jenkins/workspace/Vms_va/POC/FaceRecognition/Linux
+ 1985  ls
+ 1986  make
+ 1987  make clean
+ 1988  ls
+ 1989  make
+ 1990  vi Makefile
+ 1991  cd
+ 1992  cd /var/lib/jenkins/workspace/Vms_va/POC/LPR/Linux
+ 1993  ls
+ 1994  make
+ 1995  cd
+ 1996  sudo make
+ 1997  cd /var/lib/jenkins/workspace/Vms_va/POC/MotionDetection/Linux
+ 1998  ls
+ 1999  make
+ 2000  cd
+ 2001  cd /var/lib/jenkins/workspace/Vms_va/POC/MotionDetection/Linux
+ 2002  make
+ 2003  cd
+ 2004  cd /var/lib/jenkins/workspace/Vms_va/POC/QueueManagement/Linux
+ 2005  ls
+ 2006  make
+ 2007  cd ..
+ 2008  git update
+ 2009  git pull
+ 2010  who am i
+ 2011  sudo su
+ 2012  make
+ 2013  ls
+ 2014  ls -a POC/
+ 2015  ls -al POC/
+ 2016  cd ..
+ 2017  cd Vms_va/
+ 2018  chmod -R 0666 POC/
+ 2019  sudo chmod -R 0666 POC/
+ 2020  sudo chmod -R 777 POC/
+ 2021  cd POC/FaceRecognition/Linux/
+ 2022  ls -al
+ 2023  make
+ 2024  git pull origin master
+ 2025  cd ..
+ 2026  cd CameraTampering/Linux/
+ 2027  make
+ 2028  cd ../../..
+ 2029  cd ..
+ 2030  ls
+ 2031  git clone git@192.168.10.127:/home/git/vms_va.git
+ 2032  ls
+ 2033  cd vms_va
+ 2034  ls -al
+ 2035  cd POC/FaceRecognition/Linux/
+ 2036  make
+ 2037  cd ..
+ 2038  rm -rf vms_va
+ 2039  history
+
+
+
+
+
+
+  148  ssh admin@vm19.einfochips.com
+  149  cd /var/lib/jenkins/workspace/Vms_va/
+  150  git pull origin master
+  151  cd POC/LPR/Linux/
+  152  lsd
+  153  ls
+  154  make
+  155  cd ../..
+  156  chmod -R 0666 *
+  157  sudo chmod -R 0666 *
+  158  cd ..
+  159  sudo su
+  160  ls -al POC/
+  161  ls -al POC/
+  162  ls -al
+  163  cd POC/
+  164  ls
+  165  ls -al
+  166  cd LPR
+  167  cd POC/
+  168  cd POC/
+  169  ls -al
+  170  cd LPR/
+  171  make
+  172  ls
+  173  cd Linux/
+  174  make
+  175  cd ..
+  176  CD ..
+  177  cd ..
+  178  cd CameraTampering/
+  179  make
+  180  ls
+  181  cd Linux/
+  182  make
+  183  ls
+  184  ls -al
+  185  cd ..
+  186  cd ..
+  187  FaceRecognition/Linux/
+  188  make
+  189  ls
+  190  cd FaceRecognition/Linux/
+  191  ls -ak
+  192  ls -al
+  193  make
+  194  cd ../../LPR/Linux/
+  195  make
+  196  git pull origin master
+  197  cd ..
+  198  cd ../FaceRecognition/
+  199  make
+  200  cd Linux/
+  201  make
+  202  git pull origin master
+  203  ls
+  204  ls -al
+  205  make
+  206  make
+  207  vi Makefile
+  208  make Makefile
+  209  make .
+  210  make
+  211  cd ..
+  212  rm -r Linux/
+  213  ls
+  214  git pull origin master
+  215  ls
+  216  cd ..
+  217  cd ..
+  218  cd..
+  219  cd ..
+  220  git clone git@192.168.10.127:/home/git/vms_va.git
+  221  rm -r vms_va
+  222  rm -rf vms_va
+  223  git clone git@192.168.10.127:/home/git/vms_va.git
+  224  cd vms_va
+  225  cd POC/FaceRecognition/Linux/
+  226  make
+  227  chown
+  228  cwd
+  229  pwd
+  230  cd. .
+  231  cd ..
+  232  cd ..
+  233  cd ..
+  234  cd ..
+  235  cd vms_va
+  236  ls -al
+  237  cd ..
+  238  rm -rf vms_va
+  239  rm -rf vms_va
+  240  cd vms_va/POC/FaceRecognition/
+  241  cd Linux/
+  242  make
+  243  cd ../../../
+  244  cd ../
+  245  rm -rf vms_va
+  246  cd vms_va
+  247  ls
+  248  ls -al
+  249  cd ..
+  250  git clone git@192.168.10.127:/home/git/vms_va.git
+  251  cd vms_va/POC/FaceRecognition/Linux/
+  252  make
+  253  cd ..
+  254  cd ..
+  255  cd CameraTampering/
+  256  make
+  257  cd Linux/
+  258  make
+  259  ls -al
+  260  chmod -R 777 .
+  261  ls -al
+  262  make
+  263  make
+  264  make
+  265  make
+  266  make
+  267  make
+  268  make
+  269  make
+  270  make
+  271  cd
+  272  history

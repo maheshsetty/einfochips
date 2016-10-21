@@ -1,0 +1,2 @@
+node-sass already depends on node-gyp instead of pangyp. So this issue was actually resolved by 35aa6dd.
+Sometimes on Windows 8/10, either msbuild in PATH or which node-gyp infers is not the latest one (note that you may have multiple versions of msbuild installed, one with VS and one with some version of .NET Framework and so on). To fix this problem, prepend the value of Environment Variables > Path with latest msbuild.

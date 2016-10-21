@@ -1,0 +1,15 @@
+ssh-keygen -t rsa
+
+Generate public/private key 
+
+1. copy public key on server at some temporary location
+scp id_rsa.pub einfochips@192.168.10.127:/tmp/
+
+2. Login to server
+login to 192.168.10.127 with username: git password: einfochips
+
+3. go to temporary directory
+cd /tmp/
+
+4. append public key
+cat id_rsa.pub  >> ~/.ssh/authorized_keys

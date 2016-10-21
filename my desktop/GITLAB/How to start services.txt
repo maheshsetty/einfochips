@@ -1,0 +1,21 @@
+How to start or stop the servers?
+
+
+#sudo cd /opt/gitlab-8.9.6-0/
+
+Multiple services in gitlab
+
+./ctlscript.sh help
+       ./ctlscript.sh (start|stop|restart|status)
+       ./ctlscript.sh (start|stop|restart|status) postgresql
+       ./ctlscript.sh (start|stop|restart|status) apache
+       ./ctlscript.sh (start|stop|restart|status) redis
+       ./ctlscript.sh (start|stop|restart|status) gitlab_sidekiq
+       ./ctlscript.sh (start|stop|restart|status) gitlab_workhorse
+       ./ctlscript.sh (start|stop|restart|status) gitlabci_multirunner
+
+#sudo /opt/gitlab-8.9.6-0/ctlscript.sh restart apache
+
+How to restart Total services;-
+
+#./ctlscript.sh restart

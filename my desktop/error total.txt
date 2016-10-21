@@ -1,0 +1,59 @@
+Generate public/private key 
+
+1. copy public key on server at some temporary location
+scp id_rsa.pub einfochips@192.168.10.127:/tmp/
+
+2. Login to server
+login to 192.168.10.127 with username: git password: einfochips
+
+3. go to temporary directory
+cd /tmp/
+
+4. append public key
+cat id_rsa.pub  >> ~/.ssh/authorized_keys
+
+-------------------------------------------
+could not get lock on ubuntu
+
+sudo rm -rf /var/lib/apt/lists/lock
+----------------------------------------
+
+how to change jenkins port in ubuntu
+
+sudo gedit /etc/default/jenkins
+
+HTTO_PORT=8090
+
+------------------------------------------
+Unlock Jenkins
+
+go to /var/lib/jenkins/secrets/initialAdminPassword COPY and PASTe
+
+Change permissions
+
+#chmod 0777 initialAdminPassword
+
+#cat initialadminpassword copy and paste
+------------------------------------------------
+
+Create First Admin User
+
+Username:jenkins		
+Password:einfochips	
+Confirm password:einfochips	
+Full name:mahesh.setty	
+E-mail address:	mahesh.setty@einfochips.com 
+
+save and finish
+
+-------------------------------------------------
+how to restart jenkins on ubuntu
+
+/etc/init.d/jenkins restart
+
+
+
+
+
+
+

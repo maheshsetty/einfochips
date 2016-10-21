@@ -1,0 +1,35 @@
+
+    On your master machine go to Manage Jenkins > Manage Nodes.
+    New Node --> Enter Node Name.
+    Select Dumb Slave --> Press OK.
+    Fill out the following:
+        Set a number of executors (one or more) as needed.
+        Set a Remote FS Root, a home directory for the master on the slave machine.
+            For a Windows slave, use something like: "C:\Jenkins\"
+            TODO: add details.
+        Select the appropriate Usage setting:
+            For an additional worker: Utilize this slave as much as possible 
+            For specialized jobs: Leave this machine for tied jobs only
+        Launch Method:
+            An easy way to control a Windows slave is by using Launch slave agents via Java Web Start  (Recommended for Windows)
+            TODO: add steps for other methods.
+        Availability --> Keep this slave online as much as possible
+            TODO: add details for each option.
+        Press OK.
+    Now you need to connect your slave machine to the master using the following steps.
+        Open a browser on the slave machine and go to the Jenkins master server url (http://yourjenkinsmaster:8080).
+        Go to Manage Jenkins > Manage Nodes, Click on the newly created slave machine. You will need to login as someone that has the "Connect" Slave permission if you have configured global security.
+        Click on the Launch button to launch agent from browser on slave.
+        Run the program.
+            If you encounter connection issue, then you could enlarge the popup windows to see the master port used and check your network configuration (firewall, port forward, ...)
+        Now you should see the Slave machine connected under Nodes.
+    If you want the service to run on start-up of the slave machine do the following (Windows only directions):
+        In the Slave agent program running on your slave machine, 
+        click File --> Install as Windows Service. 
+
+        Note that this feature requires ".Net Framework 3.5"
+        Start, type Services and Select the Services program.
+        Find Jenkins Slave in the list, Double click to open.
+        Select Startup type --> Automatic.
+        Go to the Log On tab, change the Log on as to a user of your choice (Special user account Jenkins recommended).
+        Make sure that auto login is set for the slave machine for the user account, then the VM (or physical computer) should connect and be available when needed.

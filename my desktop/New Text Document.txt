@@ -1,0 +1,8 @@
+https://docs.gitlab.com/ee/administration/auth/ldap.html
+https://www.bonusbits.com/wiki/HowTo:Setup_LDAP_on_Gitlab
+https://www.digitalocean.com/community/tutorials/how-to-use-the-gitlab-user-interface-to-manage-projects
+http://parketas.bcw.lt/help/integration/ldap.md#enabling-ldap-sign-in-for-existing-gitlab-users
+
+
+http://10.110.4.225:8080/gitlab/Nidec.git
+git@10.110.4.225:gitlab/Nidec.git
